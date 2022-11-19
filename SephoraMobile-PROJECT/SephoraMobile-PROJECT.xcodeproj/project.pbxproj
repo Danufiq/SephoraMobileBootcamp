@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89B287D92928697D0062774D /* ExampleBtnUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B287D82928697D0062774D /* ExampleBtnUI.swift */; };
+		89B287DD292869C30062774D /* ExampleTxtFieldUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B287DC292869C30062774D /* ExampleTxtFieldUI.swift */; };
+		89B287E229286A330062774D /* ExpCommonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B287E129286A330062774D /* ExpCommonModels.swift */; };
+		89B287E529286A560062774D /* ExampleMainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B287E429286A560062774D /* ExampleMainModels.swift */; };
 		EA1EAF4E2925CBF100860A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1EAF4D2925CBF100860A33 /* AppDelegate.swift */; };
 		EA1EAF502925CBF100860A33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1EAF4F2925CBF100860A33 /* ViewController.swift */; };
 		EA1EAF532925CBF100860A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1EAF512925CBF100860A33 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89B287D82928697D0062774D /* ExampleBtnUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBtnUI.swift; sourceTree = "<group>"; };
+		89B287DC292869C30062774D /* ExampleTxtFieldUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTxtFieldUI.swift; sourceTree = "<group>"; };
+		89B287E129286A330062774D /* ExpCommonModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpCommonModels.swift; sourceTree = "<group>"; };
+		89B287E429286A560062774D /* ExampleMainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleMainModels.swift; sourceTree = "<group>"; };
 		EA1EAF4A2925CBF100860A33 /* SephoraMobile-PROJECT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SephoraMobile-PROJECT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1EAF4D2925CBF100860A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA1EAF4F2925CBF100860A33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89B287D4292868D40062774D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89B287DF29286A070062774D /* Main */,
+				89B287DE292869E10062774D /* Common */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89B287D5292868E20062774D /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				89B287D7292869520062774D /* ButtonUI */,
+				89B287D6292869310062774D /* TextFieldUI */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		89B287D6292869310062774D /* TextFieldUI */ = {
+			isa = PBXGroup;
+			children = (
+				89B287DC292869C30062774D /* ExampleTxtFieldUI.swift */,
+			);
+			path = TextFieldUI;
+			sourceTree = "<group>";
+		};
+		89B287D7292869520062774D /* ButtonUI */ = {
+			isa = PBXGroup;
+			children = (
+				89B287D82928697D0062774D /* ExampleBtnUI.swift */,
+			);
+			path = ButtonUI;
+			sourceTree = "<group>";
+		};
+		89B287DE292869E10062774D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				89B287E029286A170062774D /* ExmpleCommonModels */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		89B287DF29286A070062774D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				89B287E329286A3B0062774D /* ExampleMain */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		89B287E029286A170062774D /* ExmpleCommonModels */ = {
+			isa = PBXGroup;
+			children = (
+				89B287E129286A330062774D /* ExpCommonModels.swift */,
+			);
+			path = ExmpleCommonModels;
+			sourceTree = "<group>";
+		};
+		89B287E329286A3B0062774D /* ExampleMain */ = {
+			isa = PBXGroup;
+			children = (
+				89B287E429286A560062774D /* ExampleMainModels.swift */,
+			);
+			path = ExampleMain;
+			sourceTree = "<group>";
+		};
 		EA1EAF412925CBF100860A33 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +128,8 @@
 		EA1EAF4C2925CBF100860A33 /* SephoraMobile-PROJECT */ = {
 			isa = PBXGroup;
 			children = (
+				89B287D5292868E20062774D /* CommonUI */,
+				89B287D4292868D40062774D /* Models */,
 				EA1EAF4D2925CBF100860A33 /* AppDelegate.swift */,
 				EA1EAF4F2925CBF100860A33 /* ViewController.swift */,
 				EA1EAF512925CBF100860A33 /* Main.storyboard */,
@@ -135,8 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B287DD292869C30062774D /* ExampleTxtFieldUI.swift in Sources */,
+				89B287D92928697D0062774D /* ExampleBtnUI.swift in Sources */,
 				EA1EAF502925CBF100860A33 /* ViewController.swift in Sources */,
+				89B287E229286A330062774D /* ExpCommonModels.swift in Sources */,
 				EA1EAF4E2925CBF100860A33 /* AppDelegate.swift in Sources */,
+				89B287E529286A560062774D /* ExampleMainModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "id.ist.SephoraMobile-PROJECT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "id.ist.SephoraMobile-PROJECT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
